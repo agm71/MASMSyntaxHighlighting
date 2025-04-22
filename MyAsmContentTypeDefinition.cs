@@ -11,7 +11,7 @@ namespace MASMSyntaxHighlighting
         public static ContentTypeDefinition AsmContentType = null;
 
         [Export(typeof(FileExtensionToContentTypeDefinition))]
-        [ContentType("asm")]
+        [ContentType("C/C++")]
         [FileExtension(".asm")]
         public static FileExtensionToContentTypeDefinition AsmFileExtension = null;
     }

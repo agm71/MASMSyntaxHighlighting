@@ -6,7 +6,7 @@ using System.ComponentModel.Composition;
 namespace MASMSyntaxHighlighting
 {
     [Export(typeof(IClassifierProvider))]
-    [ContentType("asm")]
+    [ContentType("C/C++")]
     internal class MyAsmClassifierProvider : IClassifierProvider
     {
         [Import]
