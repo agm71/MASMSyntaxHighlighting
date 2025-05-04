@@ -102,4 +102,18 @@ namespace MMASMSyntaxHighlighting.Classification
             ForegroundColor = Colors.YellowGreen;
         }
     }
+
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "masmProcedure")]
+    [Name("masmProcedure")]
+    [UserVisible(true)]
+    [Order(Before = Priority.Default)]
+    internal sealed class AsmProcedureFormat : ClassificationFormatDefinition
+    {
+        public AsmProcedureFormat()
+        {
+            DisplayName = "MASM Procedure name";
+            ForegroundColor = Colors.OrangeRed;
+        }
+    }
 }

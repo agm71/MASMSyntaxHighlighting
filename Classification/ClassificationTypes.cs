@@ -33,5 +33,9 @@ namespace MASMSyntaxHighlighting.Classification
         [Export(typeof(ClassificationTypeDefinition))]
         [Name("masmRuntimeOperator")]
         internal static ClassificationTypeDefinition AsmRuntimeOperatorType = null;
+
+        [Export(typeof(ClassificationTypeDefinition))]
+        [Name("masmProcedure")]
+        internal static ClassificationTypeDefinition AsmProcedureType = null;
     }
 }
